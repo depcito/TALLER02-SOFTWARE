@@ -22,7 +22,7 @@ jobs:
       run: |
         echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
     - name: Build the Docker image
-      run: docker build pokeneas --file pokeneas/Dockerfile --tag ${{secrets.DOCKERHUB_USER}}/pokeneas:latest
+      run: docker build pokeneas --file pokeneas/Dockerfile --tag ${{secrets.DOCKERHUB_USER}}/taller02-software:latest
 
     - name: Docker Push
-      run: docker push ${{secrets.DOCKERHUB_USER}}/pokeneas:latest
+      run: docker push ${{secrets.DOCKERHUB_USER}}/taller02-software:latest
