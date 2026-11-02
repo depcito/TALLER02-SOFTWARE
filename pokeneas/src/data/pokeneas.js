@@ -1,15 +1,15 @@
-// Cambia BUCKET por el nombre de tu bucket de GCP (o define BUCKET_URL como variable de entorno)
+// Cambia BUCKET_URL por el nombre de tu bucket de GCP (o define BUCKET_URL como variable de entorno)
 const BUCKET_URL = process.env.BUCKET_URL || 'https://storage.googleapis.com/pokeneas-depcito-img'
 
 const pokeneas = [
-  { id: 1, nombre: 'Paisachu', altura: '1.10 m', habilidad: 'Arepa eléctrica', imagen: 'pokenea1.png', frase: 'Más vale arepa en mano que ciento volando.' },
-  { id: 2, nombre: 'Medellinbasaur', altura: '1.30 m', habilidad: 'Metro veloz', imagen: 'pokenea2.png', frase: 'Pensar es el primer paso; arrancar, el segundo.' },
-  { id: 3, nombre: 'Silletamon', altura: '0.90 m', habilidad: 'Florecer', imagen: 'pokenea3.png', frase: 'Cargar con belleza también es una forma de fortaleza.' },
-  { id: 4, nombre: 'Guatapeon', altura: '1.50 m', habilidad: 'Escalar piedra', imagen: 'pokenea4.png', frase: 'Los que suben con paciencia ven el mejor paisaje.' },
-  { id: 5, nombre: 'Trovador', altura: '1.20 m', habilidad: 'Canto de carriel', imagen: 'pokenea5.png', frase: 'Quien canta su vida, la vive dos veces.' },
-  { id: 6, nombre: 'Bandejachu', altura: '1.00 m', habilidad: 'Hambre voraz', imagen: 'pokenea6.png', frase: 'El que no se llena de preguntas se queda con hambre de saber.' },
-  { id: 7, nombre: 'Arrieromon', altura: '1.60 m', habilidad: 'Cargar sin quejarse', imagen: 'pokenea7.png', frase: 'El camino se hace andando, y se aprende tropezando.' },
-  { id: 8, nombre: 'Cafetino', altura: '0.80 m', habilidad: 'Despertar al mundo', imagen: 'pokenea8.png', frase: 'Lo bueno se toma con calma, pero se empieza temprano.' },
+  { id: 493, nombre: 'Arceus', altura: '3.2 m', habilidad: 'Multitype', imagen: 'pokenea1.png', frase: 'Quien lo crea todo sabe que cada comienzo nace de una pausa.' },
+  { id: 392, nombre: 'Infernape', altura: '1.2 m', habilidad: 'Llamarada', imagen: 'pokenea2.png', frase: 'El fuego que no se alimenta de esfuerzo se apaga solo.' },
+  { id: 448, nombre: 'Lucario', altura: '1.2 m', habilidad: 'Fuerza interior', imagen: 'pokenea3.png', frase: 'Escuchar el aura de los demás es el primer paso para entenderse a uno mismo.' },
+  { id: 405, nombre: 'Luxray', altura: '1.4 m', habilidad: 'Intimidación', imagen: 'pokenea4.png', frase: 'Ver lo que otros ocultan no sirve si no se sabe guardar silencio.' },
+  { id: 384, nombre: 'Rayquaza', altura: '7.0 m', habilidad: 'Cielo despejado', imagen: 'pokenea5.png', frase: 'Quien vive sobre las nubes aprende que toda tormenta es pasajera.' },
+  { id: 486, nombre: 'Regigigas', altura: '3.7 m', habilidad: 'Inicio lento', imagen: 'pokenea6.png', frase: 'Lo que tarda en arrancar suele ser lo que más lejos llega.' },
+  { id: 292, nombre: 'Shedinja', altura: '0.8 m', habilidad: 'Superguarda', imagen: 'pokenea7.png', frase: 'Cuando solo se tiene un hilo de vida, cada paso se vuelve consciente.' },
+  { id: 285, nombre: 'Shroomish', altura: '0.4 m', habilidad: 'Efecto espora', imagen: 'pokenea8.png', frase: 'Ser pequeño no impide dar gracias ni sembrar vida.' },
 ].map((p) => ({ ...p, imagen: `${BUCKET_URL}/${p.imagen}` }))
 
 module.exports = pokeneas
